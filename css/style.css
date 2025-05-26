@@ -1,0 +1,74 @@
+/* variables */
+$yellow: #f6c653;
+$gray-bg: #f5f5f5;
+$dark: #222;
+$body-font: 'Open Sans', sans-serif;
+
+/* base */
+body {
+  font-family: $body-font;
+  color: $dark;
+  line-height: 1.6;
+}
+h1,h2,h3,h4,h5 { font-weight:700; margin:0 0 .8rem }
+.section-title { font-size:2rem; text-transform:uppercase; }
+.section-subtitle{ color:#888; margin-bottom:3rem }
+
+/* navbar / hero */
+.hero{
+  background:url('../images/hero.jpg') center/cover no-repeat;
+  color:#fff; text-align:center; padding:160px 0;
+}
+.navbar{
+  display:flex; justify-content:space-between; align-items:center;
+}
+.navbar .menu{ list-style:none; display:flex; gap:2rem; margin:0 }
+.navbar a{ color:#fff; text-transform:uppercase; font-size:.875rem }
+
+.intro .headline{ font-size:3rem; margin:.5rem 0 2.5rem }
+.btn-yellow{
+  background:$yellow; color:#fff; padding:.9rem 2.5rem; border-radius:4px;
+  font-weight:700; text-transform:uppercase; display:inline-block;
+  &:hover{ background:darken($yellow,8%) }
+}
+
+/* services */
+.services{ padding:100px 0 }
+.icon-circle{
+  width:90px; height:90px; border:3px solid $yellow;
+  display:grid; place-items:center; border-radius:50%; margin:0 auto 1.5rem;
+}
+.service-box h4{ margin:1rem 0 .5rem }
+.service-box p{ font-size:.875rem; color:#666 }
+
+/* portfolio grid */
+.portfolio{ padding:100px 0; background:$gray-bg }
+.portfolio-item{
+  background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.05);
+  img{ width:100%; display:block }
+  figcaption{ padding:1rem 1rem 1.4rem }
+  h5{ font-size:1rem; margin:.5rem 0 .25rem }
+  span{ font-size:.8125rem; color:#888 }
+}
+
+/*  footer  */
+.page-footer{
+  padding:60px 0; background:#fff;
+  .copyright{ margin:0 0 1.5rem; color:#888 }
+}
+.social{ list-style:none; display:flex; justify-content:center; gap:1rem; padding:0 }
+.social a{
+  width:46px;height:46px; border-radius:50%; display:grid;place-items:center;
+  background:$dark; color:#fff; font-size:1rem;
+  &:hover{ background:$yellow; color:#fff }
+}
+
+/* mobile */
+@media (max-width: 767px){
+  .hero{ padding:120px 1rem }
+  .intro .headline{ font-size:2.25rem }
+  .navbar .menu{ flex-direction:column; gap:1rem; margin-top:1rem }
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
